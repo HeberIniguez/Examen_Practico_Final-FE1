@@ -69,8 +69,124 @@ main .container{
     border-radius: 100px;
     align-self: flex-end;
 }
+
+    /*Estilos para la seccion 1*/
+
+    .seccion_1{
+        background-color: #8B48BF;
+        padding: 30px 0;
+    }
+
+    .seccion_1 h3{
+        color: white;
+        font-size: 2em;
+        line-height: 1.2em;
+        width: 110%;
+    }
+
+    .seccion_1 p{
+        color: white;
+        width: 110%;
+
+    }
+
+    .seccion_1 .container{
+        gap: 50px
+    }
+
+    /* Estilos para las cards */
+
+    .seccion_cards{
+        padding: 100px 0;
+    }
+
+    .seccion_cards .container{
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .card{
+        width: 500px;
+    }
+
+    .card_header{
+        display: flex;
+        align-items: center;
+    }
+
+    .card_header span{
+        background-color: #8B48BF;
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 100px;
+        color: white;
+    }
+
+    .card h3{
+        margin-left: 30px;
+    }
+
+    .card p{
+        margin-left: 80px;
+    }
+
+    footer{
+        background-color: #1E1E26;
+        padding: 100px;
+    }
+
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer li{
+        color: white;
+    }
+
+    footer nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    footer ul{
+        flex-direction: column;
+    }
+
+    input{
+        padding: 10px 15px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+        font-weight: bold;
+    }
+
+    .submit{
+        background-color: #8B48BF;
+        color: white;
+    }
+
+    .copyright p{
+        width: 100%;
+        color: gray;
+        text-align: right;
+    }
+
+    /* Aqui manejamos todo el estilo responsive para celular */
     
 @media (max-width: 600px) {   
+
+    /* Estilos para el header */
     header{
         padding: 15px 0;
     } 
@@ -103,8 +219,10 @@ main .container{
         display: none;
     }
 
+    /*Estilos para main y la descripcion*/
+
     main .container{
-        padding: 25px 0;
+        padding: 35px 0;
         gap: 50px;
         text-align: end;
     }
@@ -124,5 +242,76 @@ main .container{
         font-size: 0.8em;
         text-indent: 0%;
         padding: 0 0 1em 0;
+    }
+
+    /*Estilos para la seccion 1*/
+
+    .seccion_1{
+        background-color: #3CDDF3;
+        padding: 30px 0;
+    }
+
+    .seccion_1 h3{
+        color: white;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .seccion_1 p{
+        color: white;
+    }
+
+    .seccion_1 .container{
+        gap: 50px
+    }
+
+    /* Footer */
+
+    footer{
+        height: 600px;
+        padding: 108px 0;
+    }
+
+    footer .container{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    footer nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer nav ul{
+        flex-direction: column;
+    }
+
+    input{
+        outline: none;
+        border: none;
+    }
+
+    form{
+        display: flex;
+    }
+
+    footer .social{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    footer .redes{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    footer .redes a{
+        width: 20px;
+    }
+
+    .copyright{
+        padding: 50px 0;
     }
 }
