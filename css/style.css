@@ -97,6 +97,7 @@ main .container{
     /* Estilos para las cards */
 
     .seccion_cards{
+        background-color: #FAFAFA;
         padding: 100px 0;
     }
 
@@ -122,6 +123,11 @@ main .container{
         text-align: center;
         border-radius: 100px;
         color: white;
+        width: 65px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .card h3{
@@ -131,6 +137,99 @@ main .container{
     .card p{
         margin-left: 80px;
     }
+
+    /* Formato Cards Avatars */
+
+    .subtitle{
+        height: 100px;
+        text-align: center;
+    }
+
+    .subtitle h2{
+        font-size: 2em;
+    }
+
+    .seccion_2{
+        padding: 100px 0;
+    }
+    
+    .seccion_2 .container{
+        background-color: #FAFAFA;
+        margin-top: 100px;
+        gap: 100px
+    }
+
+    .seccion_2 .button{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .seccion_2 .button a{
+        font-size: 13px;
+        padding: 1em 2em;
+    }
+    
+    .card_avatar, #card_avatar{
+        width: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card_avatar img, #card_avatar img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+    
+    .card_avatar h3, #card_avatar h3{
+        margin-top: -30px;
+        margin-bottom: 20px;
+    }
+    
+    .card_avatar p, #card_avatar p{
+        font-weight: bold;
+        color: #B3B2B7;
+    }
+    
+    .img img{
+        width: 100%;
+    }
+
+    .btn_2{
+        background-color: white;
+        color: #8B48BF;
+        padding: 0.1em 1.7em;
+        gap: 1em;
+        border-radius: 50px;
+    }
+
+    .seccion_3{
+        background-color: #8B48BF;
+        padding: 70px;
+    }
+    
+    .seccion_3 h3{
+        color: white;
+        font-size: 2em;
+        line-height: 1.2em;
+        width: 110%;
+    }
+    
+    .seccion_3 p{
+        color: white;
+        width: 110%;
+    
+    }
+    
+    .seccion_3 .container{
+        gap: 50px
+    }
+
+    /* Estilos para el footer */
 
     footer{
         background-color: #1E1E26;
@@ -265,10 +364,75 @@ main .container{
         gap: 50px
     }
 
+    /* Formato Cards */
+
+    .card_header{
+        background-color: #8B48BF4D;
+        height: 40px;
+        border-radius: 100px 0 0 100px;
+    }
+
+    .card_header span{
+        width: 65px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion_cards .container{
+        max-width: 100%;
+        margin-left: 10%;
+    }
+
+    .card p{
+        margin-top: 10%;
+        margin-left: 0;
+        font-weight: bold;
+        color: #B3B2B7;
+
+    }
+
+    .card_avatar{
+        display: none;
+    }
+
+    #card_avatar{
+        width: 300px;
+    }
+
+    /*Estilos para la seccion 1*/
+
+    .seccion_3{
+        background-color: #3CDDF3;
+        padding: 30px 0;
+    }
+
+    .seccion_3 h3{
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+    .seccion_3 .container{
+        display: flex;
+        align-items: center;
+        gap: 50px
+    }
+
+    .btn_2{
+        width: 100px;
+        display: flex;
+        text-align: center;
+        background-color: #232C50;
+        color: white;
+    }
+
+
     /* Footer */
 
     footer{
-        height: 600px;
         padding: 108px 0;
     }
 
@@ -312,6 +476,6 @@ main .container{
     }
 
     .copyright{
-        padding: 50px 0;
+        padding: 50px 0 0 0;
     }
 }
